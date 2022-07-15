@@ -19,8 +19,8 @@ app.use('/api/stocks', stockRoutes)
 
 const PORT = 5000 || process.env.PORT;
 
-const server = app.listen(PORT, ()=> {
-    console.log(`Server connected on Port ${PORT}`)
+const server = app.listen(process.env.PORT || 5000, ()=> {
+    console.log(`Server connected on Port `)
 })
 
 // var yahooFinance = require('yahoo-finance');
